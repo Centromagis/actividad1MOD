@@ -1,0 +1,109 @@
+---
+title: <span style="color:#034a94"> **Actividad 1**</span>
+output:
+html_document:
+css: styles.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment = NA)
+library(summarytools)
+
+
+c1 ="#FF7F00"  # naranja - color primario 
+c2 ="#034A94"  # azul oscuro - color secundario
+c3 ="#0EB0C6"  # azul claro - color terciario
+c4 ="#686868"  # gris - color texto
+```
+
+</br></br>
+
+# **PARTE A**
+
+## <span style="color:#034a94">**Caso biomasa**</span> 
+
+<center>
+
+```{r, echo=FALSE, out.width="90%", fig.align = "center"}
+knitr::include_graphics("img/bosque.png")
+```
+
+Tomada de: pixabay.com
+
+</center>
+
+<br/><br/>
+
+Uno de los propósitos a nivel mundial es el de estimar la captura de dióxido de carbono uno principales gases causantes del calentamiento global y por tanto del cambio climático. 
+
+<br/>
+
+Un grupo de investigadores están interesados en poder construir modelos que permitan la valoración de estos beneficio a través de información recogida sobre características de los árboles de una región húmeda, que les permita una estimación de la biomasa y así facilitar la toma de decisiones y la generación de políticas públicas. 
+
+Como no es posible obtener el valor del peso del árbol sin cortar, se plantea la opción de estimarla a través de variables como la altura y el diámetro del tronco, información requerida para la estimación del valor de la biomasa.
+
+
+
+
+<br/>
+
+Se requiere ayude a los investigadores en su propósito utilizando la información contenida en la base de datos  arboles suministrada. 
+
+<br/>
+
+Proponga un **modelo de regresión lineal simple** que permita predecir el peso del árbol en función de las covariables que considere importantes y seleccionándolas de acuerdo con un proceso adecuado. 
+
+<br/>
+
+Tenga en cuenta realizar una evaluación de la significancia de los parámetros, validación de los supuesto e interpretación de los resultados. Proponga un método de evaluación para los modelos estimados. 
+
+
+<br/>
+
+Entregable : **informe.pdf**
+
+
+</br></br>
+
+<div class="content-box-gray">
+
+### <span style="color:#686868">**Cargada de Datos**</span> 
+
+```{r, eval=FALSE}
+install.packages("devtools") # solo la primera vez
+devtools::install_github("dgonxalex80/paqueteMOD", force =TRUE)
+library(paqueteMOD)
+data(arboles)
+```
+
+</div>
+
+<br/>
+
+Realice un informe que permita cumplir con los requerimientos solicitados incluyendo conclusiones y recomendaciones. Adjunto los anexos los procesos realizados.
+
+<br/><br/><br/>
+
+# **PARTE B**
+
+# <span style="color:#034a94">**Mapa mental**</span> 
+
+Elabore un MAPA MENTAL que recoja los principales conceptos revisados en la unidad 1 y permita reconocer el nivel de apropiación alcanzado.
+
+
+Entregable : **mapa.pdf**
+
+
+<!-- RUBRICA -->
+<!-- Informe ejecutivo -->
+<!-- I1 Estructura clara,organizada y completa. -->
+<!-- I2 Comunica ideas claras  -->
+<!-- I3 Identifica la metodología adecuada. -->
+<!-- I4: Aplica la metodología adecuada.   -->
+
+<!-- Mapa -->
+<!-- M1: Contiene el tema central y todas las ideas principales y secundarias relavantes -->
+<!-- M2: Establece de manera adecuada las relaciones entre los conceptos e ideas -->
+<!-- M3 Construye un PM apropiado incluyendo imágenes, ecuaciones y no solo las palabras necesarias -->
+<!-- M4: Presenta una buena estética visual -->
+
